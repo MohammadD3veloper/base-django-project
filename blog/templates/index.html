@@ -1,0 +1,15 @@
+<form action="{% url 'search' %}" method="GET">
+    <input type="search" name="q" placeholder="Enter something to search">
+    <input type="submit">
+</form>
+
+{% for i in last_posts %}
+    <h1>{{i.name}}</h1>
+    <img src="{{i.image.url}}" alt="{{i.name}}">
+    <p>{{i.text | safe | truncatechars:200}}</p>
+    <small>{{i.subcategory.name}} on {{i.category.name}} Category</small>
+    {{i.author.username}}
+    <p>posted on {{i.date_create}}</p>
+{% empty %}
+<p>There is no post here yet.</p>
+{% endfor %}

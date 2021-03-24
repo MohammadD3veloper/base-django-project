@@ -1,0 +1,7 @@
+    <h1>{{post.name}}</h1>
+    <img src="{{i.image.url}}" alt="{{i.name}}">
+    <p>{{post.text | safe}}</p>
+    <small>{{post.subcategory.name}} on {{post.category.name}} Category</small>
+    {{post.author.username}}
+    <p>posted on {{post.date_create}}</p>
+

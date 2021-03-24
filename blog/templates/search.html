@@ -1,0 +1,25 @@
+{% for i in result %}
+    <h1>{{i.name}}</h1>
+    <img src="{{i.image.url}}" alt="{{i.name}}">
+    <p>{{i.text | safe | truncatechars:200}}</p>
+    <small>{{i.subcategory.name}} on {{i.category.name}} Category</small>
+    {{i.author.username}}
+    <p>posted on {{i.date_create}}</p>
+{% empty %}
+<p>There is no post here yet.</p>
+
+{% endfor %}
+
+{% if page_obj.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span>
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">next</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+{% endif %}
