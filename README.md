@@ -12,7 +12,7 @@ its good to make an environment for your project using:
 
 `virtualenv {NAME_OF_YOUR_ENV}`
 
-active that by run:
+active that by:
 
 `source {NAME_OF_YOUR_ENV}/bin/activate`
 
