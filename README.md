@@ -3,7 +3,7 @@ The base of any django project !
 
 write less code and saving your time !
 
-enjoy it !
+enjoy it and build your own website !
 
 # How to use ?
 its good to make an environment for your project using:
