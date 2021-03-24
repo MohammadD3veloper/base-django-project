@@ -6,9 +6,15 @@ write less code and saving your time !
 enjoy it and build your own website !
 
 # How to use ?
+`git clone https://github.com/DrD3ViLaM/base-django-project.git`
+
 its good to make an environment for your project using:
 
 `virtualenv {NAME_OF_YOUR_ENV}`
+
+active that by run:
+
+`source {NAME_OF_YOUR_ENV}/bin/activate`
 
 then run:
 
@@ -16,7 +22,11 @@ then run:
 
 `./manage.py makemigrations`
 
-`./manage.py migrite`
+`./manage.py makemigrations blog`
+
+`./manage.py migrate`
+
+`./manage.py migrite blog`
 
 to run your project on local : 
 
