@@ -13,7 +13,7 @@ CHOICES = [
 # Create your models here.
 class Page(models.Model):
     title = models.CharField(max_length=50,choices=CHOICES)
-    text = RichTextField(help_text="Don't create any form for users in here, because it will occurred Cross-Site Scripting vulnerability")
+    text = RichTextField()
     date_create = models.DateTimeField(auto_now_add=True)
     date_update = models.DateTimeField(auto_now=True)
 
