@@ -35,3 +35,6 @@ to run your project on local :
 
 ## [IMPORTANT]: 
 rename the .env-sample to .env and put your information on it.
+
+## [Note]:
+This project uses django-ckeditor and adminlte3 theme
