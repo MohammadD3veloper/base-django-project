@@ -1,4 +1,7 @@
 # base-django-project
+
+-- My first project(without best practices XD)
+
 The base of any django project !
 
 write less code and saving your time !
